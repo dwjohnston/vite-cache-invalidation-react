@@ -1,4 +1,4 @@
-import { r as reactExports, j as jsxRuntimeExports } from "./index-AvZfya5J.js";
+import { r as reactExports, j as jsxRuntimeExports } from "./index-BmoT8_XT.js";
 import "./react-CIv96BDj.js";
 function C10() {
   reactExports.useEffect(() => {

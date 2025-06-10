@@ -5,11 +5,21 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   "build": {
-    minify: false
-  },
-  // rollupOptions: {
-  //   output: {
-  //     // preserveModules: true,
-  //   }
-  // }
-})
+    minify: false,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          react: ["react", "react-dom"]
+        }
+
+      }
+    },
+
+
+    // rollupOptions: {
+    //   output: {
+    //     // preserveModules: true,
+    //   }
+    // }
+  }
+});
